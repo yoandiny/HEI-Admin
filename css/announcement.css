@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #001948;
+    --third-color: #dfa408;
+    --dark-mod: "false";
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.topMenu{
+    background-color: var(--primary-color);
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2.5px 3px grey;
+    position: sticky;
+    top: 0;
+    padding-block: 3px;
+    transition: all 0.5s;
+    
+}
+
+.navLeft{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navLeft li{
+    list-style:none;
+}
+
+
+.navLeft img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2dvh;
+}
+
+
+.navRight{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navRight li{
+    list-style:none;
+    margin-inline: 1em;
+}
+
+ a{
+    text-decoration: none;
+}
+
+.navRight img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.lateralMenu{
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    height: auto;
+    width: 17%;
+    margin: 6px;
+    box-shadow: 0px 2px 3px grey;
+    transition: all 0.5s;
+}
+
+.lateralMenu ul li{
+    padding-block: 1em;
+    margin-inline: 1em;
+}
+
+.lateralMenu ul li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.sousMenu{
+    display: none;
+}
+
+.lateralMenu > ul li:hover .sousMenu{
+    display: block;
+}
+
+.lateralMenu ul a:hover{
+    color: var(--third-color);
+}
+
+
+.lateralMenu ul li a i{
+    padding-right: 5px;
+}
+
+.sousMenu li{
+    padding-left: 2dvh;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: start;
+}
+
+li{
+    list-style: none;
+}
+
+.content{
+    margin: 1em;
+    border-radius: 15px;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 1300px;
+    height: auto;
+}
+
+
+.searchBar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2em;
+}
+
+.loupe{
+    position: absolute;
+    top: 7.5em;
+    right: 4.2em;
+
+}
+
+.bar{
+    border-radius: 25px;
+    box-shadow: grey 0px 2px 3px;
+    border: none;
+    width: 300px;
+    height: 35px;
+}
+
+.filter{
+    margin: 1.5em;
+
+}
+
+.filterBtn{
+    cursor: pointer;
+    color: var(--primary-color);
+    box-shadow: grey 0px 2px 3px;
+    padding: 1.3em;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin-inline: 1em;
+}
+
+.filterBtn:hover{
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.annoucementZone{
+    width: 1500px;
+    margin: 1em;
+    box-shadow: grey 0px 2px 3px;
+}
+
+.announceModel{
+    background-color: rgb(236, 236, 236);
+    width: 350px;
+    height: 200px;
+    box-shadow: grey 0px 2px 3px;
+    border-radius: 15px;
+    margin: 1.5em;
+    
+}
+
+.announceModelHeader{
+    white-space: nowrap;
+}
+
+.announceModelFooter button{
+    box-shadow: grey 0px 2px 3px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 1.2em;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.announceModel:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

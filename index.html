@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/icon/favicon.ico">
+    <title>Profil</title>
+</head>
+<body>
+    <nav class="topMenu">
+        <div class="navLeft">
+            
+            <li class="logo"><a href=""><img src="img/logo/hei_logo.png" alt=""></a></li>
+            
+            <h3 id="logoName">HEI Admin</h3>
+        </div>
+        <div class="navRight">
+            
+
+            <li><a href=""><img src="img/profile pircture/pdp.jpg" alt="Profile"></a></li>
+            <section class="username">
+                <h4>Fondàna Yoan</h4>
+                <h5>Etudiant</h5>
+            </section>
+            <li><a id="calendar" target="_blank" href="https://calendar.hei.school"><i style="font-size: 45px;" class='bx bx-calendar'></i></a></li>
+            <li><a id="feedback" href=""><i style="font-size: 45px; " class='bx bxs-message-rounded-error' ></i></a></li>
+            <li><a id="logout" href=""><i style="font-size: 45px;" class='bx bx-log-out bx-tada-hover' ></i></a></li>
+        </div>
+    </nav>
+   
+    <input class="checkbox" type="checkbox" name="toggle" id="toggle">
+    <label class="checkbox" style="font-size: 2em; margin: 3px; text-align: center;" for="toggle">☰</label>
+    
+    <div class="mainContainer">
+       
+        
+        <div class="lateralMenu">
+            
+            <ul>
+                <li><a href="index.html"><i class="fa fa-user-circle" aria-hidden="true"></i>  Profil</a></li>
+                <li><a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>  Enseignants</a></li>
+                <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>  Moniteurs</a></li>
+                <li class="menuDeroulant"><a href=""> <i class="fa fa-graduation-cap" aria-hidden="true"></i>  Etudiants </a>
+                    <ul class="sousMenu">
+                        <li><a href="student.html"> <i class="fa fa-address-book" aria-hidden="true"></i> Liste des étudiants</a></li>
+                        <li><a href="#"><i class='bx bx-refresh'></i>Transactions (Mobile Money)</a></li>
+                        <li><a href="#"><i class='bx bx-dollar' ></i> Frais (en retard par défaut)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-archive" aria-hidden="true"></i> Documents</a></li>
+                <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> Promotions</a></li>
+                <li><a href="#"> <i class='bx bx-book-content'></i> Cours</a></li>
+                <li><a href="#"><i class='bx bx-star' ></i> Examens</a></li>
+                <li><a href="#"> <i class='bx bx-group' ></i> Groupes</a></li>
+                <li><a href="annoucement.html"><i class='bx bxs-news' ></i> Annonces</a></li>
+                <li><a href="#"><i class='bx bx-calendar-event' ></i> Evènements</a></li>
+                <li><a href="#"><i class='bx bxs-user-badge' ></i> Staff</a></li>
+                <li><a href="#"><i class='bx bxs-cog' ></i> Frais prédéfinis</a></li>
+                
+            </ul>
+    
+            
+            
+        </div>
+       
+        <div class="mainProfil">
+            <div class="backPicture"><img src="img/heiBanner.jpg" alt=""></div>
+            <div class="upProfil">
+                <section class="profilePicture">
+                    <img src="img/profile pircture/pdp.jpg" alt="">
+                    <section class="profileInfo">
+                        <h3>Fondàna Yoan DINY</h3>
+                        <p>STD24005 - K4</p>
+                    </section>
+                </section>
+                
+            </div>
+            <div class="downProfil">
+                <nav class="onglets">
+                    <li><a href="">Détails du Profil</a></li>
+                    <li><a href="">Commentaires</a></li>
+                    <li><a href="">Boîte aux lettres</a></li>
+                </nav>
+
+                <section class="ProfilDetail">
+                    <div class="makeHorizontal">
+                        <div class="verticalPart">
+                            <div class="coordonate">
+                                <div class="profilText">
+                                    <h3>Coordonnées</h3>
+                                </div>
+                                <div class="content">
+                                    <div class="infoBox">
+                                     <section class="firstLine">
+                                        <div class="mailPart">
+                                            <i id="icon" class='bx bx-envelope'></i>
+                                            <div class="text">
+                                                <h4>Email:</h4>
+                                             <p class="infoText">hei.yoan.3@gmail.com</p>
+                                            </div>
+                                        <div id="phone" class="phonePart">
+                                            <i id="icon" class='bx bx-phone' ></i>
+                                        <div class="text">
+                                            <h4>Téléphone:</h4>
+                                            <p class="infoText">034 44 769 69</p>
+                                        </div>
+                                        
+                                </div>
+                                        
+                                        </section>
+                                    <section class="secondLine">
+                                        <div class="adressPart">
+                                            <i id="icon" class='bx bx-home' ></i>
+    
+                                        <div class="text">
+                                            <h4>Adresse:</h4>
+                                            <p class="infoText">--</p>
+                                        </div>
+
+                                        <div id="local" class="localPart">
+                                            <i id="icon" class='bx bx-current-location' ></i>
+    
+                                        <div class="text">
+                                            <h4>Géolocalisation:</h4>
+                                            <p class="infoText">--</p>
+                                        </div>
+                                    </section>
+                                    
+                                    
+                                </div>
+                                
+                               </div>
+                             </div>
+                            <div class="personalDetail">
+                                <div class="profilText">
+                                    <h3>
+                                        Détails personnelles
+                                    </h3>
+                                </div>
+                                    <div class="content">
+                                        <div class="infoBox">
+                                            <section class="firstLine">
+                                                <div class="sexPart">
+                                                    <i id="icon" class='bx bx-user-pin'></i>
+                                                <div class="text">
+                                                    <h4>Sexe:</h4>
+                                                    <p class="infoText">Homme</p>
+                                                </div>
+                                                <div id="cin" class="cinPart">
+                                                    <i id="icon" class='bx bxs-id-card'></i>
+                                                <div class="text">
+                                                    <h4>Numéro CIN:</h4>
+                                                    <p class="infoText">--</p>
+                                                </div>
+                                        
+                                                
+                                                </div>
+                                                
+                                            </section>
+                                            <section class="secondLine">
+                                                <div id="birth" class="birthPart">
+                                                    <i id="icon" class='bx bx-cake' ></i>
+            
+                                                <div class="text">
+                                                    <h4>Date et lieu de naissance:</h4>
+                                                    <p class="infoText">19 Décembre 2006 à Ambilobe</p>
+                                                </div>
+        
+                                                <div id="active" class="activePart">
+                                                    <i id="icon" class='bx bx-user-check' ></i>
+            
+                                                <div class="text">
+                                                    <h4>Status:</h4>
+                                                    <p class="infoText">Actif</p>
+                                                </div>
+                                            </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="PersonalInfo">
+                            <div class="profilText">
+                                <h3>Informations personnelles</h3>
+                            </div>
+                            <div class="verticalContent">
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bx-calendar-event' ></i>
+    
+                                    <div class="text">
+                                        <h4>Date d'entrée à HEI:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                <li>
+                                        <div class="circle">
+                                            <i id="icon" class='bx bx-user-x' ></i>
+        
+                                        <div class="text">
+                                            <h4>Redoublant:</h4>
+                                            <p class="infoText">Non</p>
+                                        </div>
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bx-clipboard' ></i>
+    
+                                    <div class="text">
+                                        <h4>Parcours de spécialisation:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bx-user-check' ></i>
+    
+                                    <div class="text">
+                                        <h4>Status professionnel:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bx-briefcase-alt-2' ></i>
+    
+                                    <div class="text">
+                                        <h4>Type d'expérience professionnelle:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bx-calendar-alt' ></i>
+    
+                                    <div class="text">
+                                        <h4>Période de l'expérience professionnelle:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <i id="icon" class='bx bxs-graduation' ></i>
+    
+                                    <div class="text">
+                                        <h4>Lycée de provenance:</h4>
+                                        <p class="infoText">--</p>
+                                    </div>
+                                </li>
+                                
+                                    
+
+                                </section>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+        </div>
+        </div>
+        
+            </body>
+</html>

@@ -1,0 +1,488 @@
+
+
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #001948;
+    --third-color: #dfa408;
+    --dark-mod: "false";
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.topMenu{
+    background-color: var(--primary-color);
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2.5px 3px grey;
+    position: sticky;
+    top: 0;
+    padding-block: 3px;
+    transition: all 0.5s;
+    
+}
+
+.navLeft{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.navLeft li{
+    list-style:none;
+}
+
+
+.navLeft img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2vh;
+}
+
+
+
+
+
+.navRight{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+#calendar, #feedback, #logout{
+    color: var(--secondary-color);
+}
+
+.navRight li{
+    list-style:none;
+    margin-inline: 1em;
+}
+
+ a{
+    text-decoration: none;
+}
+
+.navRight img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.lateralMenu{
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    height: auto;
+    width: 17%;
+    margin: 6px;
+    box-shadow: 0px 2px 3px grey;
+    transition: all 0.5s;
+}
+
+.lateralMenu ul li{
+    padding-block: 1em;
+    margin-inline: 1em;
+}
+
+.lateralMenu ul li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.sousMenu{
+    display: none;
+}
+
+.lateralMenu > ul li:hover .sousMenu{
+    display: block;
+}
+
+.lateralMenu ul a:hover{
+    color: var(--third-color);
+}
+
+
+.lateralMenu ul li a i{
+    padding-right: 5px;
+}
+
+.sousMenu li{
+    padding-left: 2vh;
+}
+
+.mainProfil img{
+    height: 500px;
+    width: 1000px;
+}
+
+.mainProfil{
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0px 2px 3px grey;
+    transition: all 0.5s;
+}
+
+.mainContainer{
+    display: flex;
+}
+
+
+
+.profilePicture img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+}
+
+.backPicture {
+    overflow: hidden;
+    width: 1300px;
+    height: 335px;
+
+}
+
+.backPicture img{
+    width: 1300px;
+    height: 335px;
+}
+
+.profilePicture{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 18.5em;
+    left: 19em;
+
+}
+
+.profileInfo{
+    padding-top: 4.5em;
+    font-size: 1.5em;
+    padding-left: 2vh;
+}
+
+.onglets{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    border-bottom: grey 1px solid;
+}
+
+.onglets a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.onglets a:hover{
+    color: var(--third-color);
+}
+
+.onglets li{
+    list-style: none;
+    margin-inline: 1em;
+}
+
+
+.downProfil{
+    padding-top: 3em; ;
+}
+
+.coordonate{
+    margin: 10px;
+    width: 550px;
+    height: 275px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.profilText{
+    padding-top: 1.5em;
+    padding-left: 2em;
+    color: var(--third-color);
+    border-bottom: grey 1px solid;
+}
+
+
+li{
+    list-style: none;
+}
+
+.personalDetail{
+    margin: 15px;
+    width: 550px;
+    height: 275px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.makeHorizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.PersonalInfo{
+    margin-inline: 10px;
+    margin-block: 20px;
+    width: 650px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px grey;
+}
+
+.infoBox{
+    padding: 1vh;
+    height: 35px;
+    margin-block: 15px;
+    align-items: center;
+}
+
+.mailPart, .adressPart, .birthPart, .sexPart{
+    border: var(--third-color) 1px solid;
+    border-radius: 50%;
+    padding: 1vh;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-block: 15px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.phonePart, .activePart, .localPart{
+    border: var(--third-color) 1px solid;
+    border-radius: 50%;
+    padding: 1vh;
+    width: 35px;
+    height: 35px;
+    margin-block: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#phone{
+    margin-left: 7em;
+}
+
+#local{
+    margin-left: 10.5em;
+}
+
+#cin{
+    margin-left: 12em;
+}
+
+#active{
+    margin: 4em;
+}
+
+.verticalContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.verticalContent li{
+    list-style: none;
+    margin-block: 15px;}
+
+ .circle{
+    border: var(--third-color) 1px solid;
+    border-radius: 50%;
+    padding: 1vh;
+    width: 35px;
+    height: 35px;
+    margin-inline: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+
+
+#icon{
+    
+    font-size: 2em;
+}
+
+.text{
+    margin-left: 25px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    
+}
+
+.content{
+    display: flex;
+    margin: auto;
+    width: 100%;
+ 
+}
+
+.infoText{
+    font-size: 0.75rem;
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    .topMenu{
+        background-color: var(--primary-color);
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 2.5px 3px grey;
+        position: sticky;
+        top: 0;
+        padding-block: 3px;
+        transition: all 0.5s;
+       
+
+        
+    }
+
+    .lateralMenu{
+        width: 50%;
+        position: fixed;
+        white-space: nowrap;
+        z-index: 10;
+    }
+    
+    .navRight img{
+        position: absolute;
+        right: 4.5em;
+        top: 3px
+    }
+
+    .username, #logoName, #calendar{
+        display: none;
+    }
+
+    .makeHorizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainProfil{
+        margin: 15px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .profilePicture img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilePicture {
+        top: 15em;
+        left: 2.5em;
+    
+    }
+
+    .lateralMenu{
+        height: 100%;
+        transform: translateX(-200%);
+        transition: all 0.5s;
+    }
+    #feedback{
+        display: none;
+    }
+
+    .profileInfo h3, .profileInfo p{
+        font-size: 16px;
+    }
+
+    .logo{
+        margin-left: 10em;
+    }
+
+
+    .backPicture {
+        overflow: hidden;
+        width: 600px;
+        height: 250px;
+        
+    
+    }
+    
+    .backPicture img{
+        width: 600px;
+        height: 250px;
+        transform: scale(1.5);
+    }
+
+ .firstLine, .secondLine, .infoBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoBox    {
+        padding: 1vh;
+        height: 100%;
+    }
+
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .mainContainer .lateralMenu{
+        display: block;
+        transform: translateX(0);
+        transition: all 0.5s;
+        
+    }
+    #toggle:checked ~ label{
+        color: var(--third-color);
+        transition: all 0.5s;
+    }
+
+    .checkbox{
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .onglets li a{
+        font-size: 0.8rem;
+    }
+
+
+.verticalPart{
+    display: none;
+  }
+
+
+
+}
+

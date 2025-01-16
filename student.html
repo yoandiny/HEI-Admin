@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/icon/favicon.ico">
+    <title>Liste des étudiants</title>
+</head>
+<body>
+    
+    <nav class="topMenu">
+        <div class="navLeft">
+            <li><a href=""><img src="img/logo/hei_logo.png" alt=""></a></li>
+            
+            <h3>HEI Admin</h3>
+        </div>
+        <div class="navRight">
+            
+            
+            <li><a href=""><img src="img/profile pircture/pdp.jpg" alt="Profile"></a></li>
+            <section class="userName">
+                <h4>Fondàna Yoan</h4>
+                <h5>Etudiant</h5>
+            </section>
+            <li><a href="https://calendar.hei.school"></a><i style="font-size: 45px;" class='bx bx-calendar'></i></li>
+            <li><a href=""><i style="font-size: 45px;" class='bx bxs-message-rounded-error' ></i></a></li>
+            <li><a href=""><i style="font-size: 45px;" class='bx bx-log-out bx-tada-hover' ></i></a></li>
+        </div>
+    </nav>
+   
+
+    <div class="mainContainer">
+       
+    
+        <div class="lateralMenu">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-user-circle" aria-hidden="true"></i>  Profil</a></li>
+                <li><a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>  Enseignants</a></li>
+                <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>  Moniteurs</a></li>
+                <li class="menuDeroulant"><a href=""> <i class="fa fa-graduation-cap" aria-hidden="true"></i>  Etudiants </a>
+                    <ul class="sousMenu">
+                        <li><a href="student.html"> <i class="fa fa-address-book" aria-hidden="true"></i> Liste des étudiants</a></li>
+                        <li><a href="#"><i class='bx bx-refresh'></i>Transactions (Mobile Money)</a></li>
+                        <li><a href="#"><i class='bx bx-dollar' ></i> Frais (en retard par défaut)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-archive" aria-hidden="true"></i> Documents</a></li>
+                <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> Promotions</a></li>
+                <li><a href="#"> <i class='bx bx-book-content'></i> Cours</a></li>
+                <li><a href="#"><i class='bx bx-star' ></i> Examens</a></li>
+                <li><a href="#"> <i class='bx bx-group' ></i> Groupes</a></li>
+                <li><a href="annoucement.html"><i class='bx bxs-news' ></i> Annonces</a></li>
+                <li><a href="#"><i class='bx bx-calendar-event' ></i> Evènements</a></li>
+                <li><a href="#"><i class='bx bxs-user-badge' ></i> Staff</a></li>
+                <li><a href="#"><i class='bx bxs-cog' ></i> Frais prédéfinis</a></li>
+                
+            </ul>
+    
+            
+            
+        </div>
+
+        <section class="studentContainer">
+            <div class="top">
+                
+                <h2 class="text">Informations généraux</h2>
+                <button class="create"><i class='bx bx-plus' ></i> Créer</button>
+            </div>
+            <div class="info">
+                <span class="studentTotal">
+                    <h3 class="infoText">Etudiants: <i id="infoIcon" class='bx bx-male-female' ></i></h3>
+                    <h2 class="infoText">492</h2>
+                    <p class="infoText">Au total</p>
+                </span>
+
+                <span class="womenCounter">
+                    <h3 class="infoText">Femmes: <i id="infoIcon" class="fa fa-venus" aria-hidden="true"></i></h3>
+                    <h2 class="infoText">105</h2>
+                    <p class="infoText">Au total</p>
+                </span>
+                <span class="menCounter">
+                    <div class="title">
+                        <h3 class="infoText">Hommes: <i id="infoIcon" class="fa fa-mars" aria-hidden="true"></i></h3>
+                    </div>
+                   
+                    <h2 class="infoText">105</h2>
+                    <p class="infoText">Au total</p>
+                </span>
+                <span class="collaboratorCounter">
+                    <h3 class="infoText">Collaborateur: <i id="infoIcon" class='bx bxs-briefcase' ></i></h3>
+                    <h2 class="infoText">105</h2>
+                    <p class="infoText">Au total</p>
+                </span>
+
+            </div>
+            <div class="studentList">
+                <section class="searchPart">
+                    <span class="title">
+
+                        <h3><i class='bx bxs-graduation' ></i> Liste des étudiants</h3>
+                       
+                    </span>
+                    <span class="searchBar">
+                        <input type="text" name="searchBar" id="searchBar" placeholder="Rechercher un étudiant">
+                        <a class="searchIcon" href=""><i class='bx bx-search-alt' ></i></a>
+                        <a href=""><i id="three-dot" class='bx bx-dots-vertical-rounded' ></i></a>
+                    </span>
+                </section>
+                <ul class="list">
+                    <li class="cut"><h4 class="first">Référence</h4> <h4 class="others">Prénoms</h4> <h4 class="others">Noms</h4></li>
+                    <div class="studentModel">
+                        <p>STD24005</p>
+                        <p class="underFirstName">Fondàna Yoan</p>
+                        <p class="underLastName">DINY</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24006</p>
+                        <p class="underFirstName">Jean Claude</p>
+                        <p class="underLastName">DUPONT</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24007</p>
+                        <p class="underFirstName">Marie Claire</p>
+                        <p class="underLastName">ROBERT</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24008</p>
+                        <p class="underFirstName">Lucie Anna</p>
+                        <p class="underLastName">MARTIN</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24009</p>
+                        <p class="underFirstName">Pierre Louis</p>
+                        <p class="underLastName">LEGRAND</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24001</p>
+                        <p class="underFirstName">Marie</p>
+                        <p class="underLastName">ANDRIANINA</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24002</p>
+                        <p class="underFirstName">Jean</p>
+                        <p class="underLastName">MICHEL</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24003</p>
+                        <p class="underFirstName">Sofia</p>
+                        <p class="underLastName">RAKOTOMALALA</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24004</p>
+                        <p class="underFirstName">Hery</p>
+                        <p class="underLastName">RASOAMANANA</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24005</p>
+                        <p class="underFirstName">Aina</p>
+                        <p class="underLastName">RASOLO</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24006</p>
+                        <p class="underFirstName">Clara</p>
+                        <p class="underLastName">RAMANANDRAIBE</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24007</p>
+                        <p class="underFirstName">Miora</p>
+                        <p class="underLastName">RAHARINOSY</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="studentModel">
+                        <p>STD24008</p>
+                        <p class="underFirstName">Eric</p>
+                        <p class="underLastName">RANDRIANASOLO</p>
+                        <div class="editButton">
+                            <i class='bx bxs-pencil'></i>
+                            <h3>Editer</h3>
+                        </div>
+                    </div>
+                    <div class="downPart">
+                        <li><a href="">Suivant </a><i class='bx bx-chevron-right' ></i></li>
+                        <li><p>Page: 1  Taille:10</p></li>
+    
+                    </div>
+                </ul>
+               
+                </div>
+                
+            
+        </section>
+
+    </div>
+   
+
+</body>
+</html>
