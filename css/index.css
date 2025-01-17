@@ -33,8 +33,95 @@ body {
     top: 0;
     padding-block: 3px;
     transition: all 0.5s;
+    z-index: 11;
     
 }
+
+.mobileDark{
+    position: absolute;
+    z-index: 12;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+    top: 1.2em;
+    right: 28em;
+}
+
+#dark{
+    position: absolute;
+    cursor: pointer;
+    z-index: 13;
+    top: 2em;
+    right: 37em;
+    opacity: 0;
+}
+
+.toggle{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 23px;
+    height: 23px;
+}
+
+/* Mode Sombre */
+
+#dark:checked, #dark:checked ~ .mobileDark .toggle {
+    transform: translateX(40px);
+    box-shadow: grey 0px 2px 3px;
+}
+
+#dark:checked ~ .mobileDark {
+    box-shadow: var(--primary-color) 0px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .topMenu .navRight li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+ #dark:checked ~ .topMenu, #dark:checked ~ .topMenu .navLeft, #dark:checked ~ .topMenu .navRight {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu ul li a{
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer{
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-color) 1px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .profileInfo{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil .onglets li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+/* Mode Sombre */
 
 .navLeft{
     display: flex;
@@ -256,7 +343,7 @@ li{
     align-items: center;
 }
 
-.mailPart, .adressPart, .birthPart, .sexPart{
+.mailPart, .adressPart, .birthPart, .sexPart, .cinPart{
     border: var(--third-color) 1px solid;
     border-radius: 50%;
     padding: 1vh;
@@ -370,6 +457,18 @@ label, #toggle
         
     }
 
+    #dark{
+        display: block;
+        position: absolute;
+        right: 12.5em;
+    }
+
+    .mobileDark{
+        position: absolute;
+        right: 7.7em;
+
+    }
+
     .lateralMenu{
         width: 50%;
         position: fixed;
@@ -467,11 +566,13 @@ label, #toggle
         transition: all 0.5s;
     }
 
-    .checkbox{
+
+    .checkbox{   
         position: absolute;
         top: 0;
         left: 5px;
     }
+
 
     .onglets li a{
         font-size: 0.8rem;

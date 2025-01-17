@@ -33,6 +33,92 @@ body {
     
 }
 
+.mobileDark{
+    position: absolute;
+    z-index: 12;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+    top: 1.2em;
+    right: 28em;
+}
+
+#dark{
+    position: absolute;
+    cursor: pointer;
+    z-index: 13;
+    top: 2em;
+    right: 37em;
+    opacity: 0;
+}
+
+.toggle{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 23px;
+    height: 23px;
+}
+
+/* Mode Sombre */
+
+#dark:checked, #dark:checked ~ .mobileDark .toggle {
+    transform: translateX(40px);
+    box-shadow: grey 0px 2px 3px;
+}
+
+#dark:checked ~ .mobileDark {
+    box-shadow: var(--primary-color) 0px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .topMenu .navRight li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+ #dark:checked ~ .topMenu, #dark:checked ~ .topMenu .navLeft, #dark:checked ~ .topMenu .navRight {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu ul li a{
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer{
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-color) 1px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .profileInfo{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil .onglets li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+/* Mode Sombre */
+
 .navLeft{
     display: flex;
     justify-content: start;
@@ -305,6 +391,12 @@ li{
     justify-content: space-between;
 
 }
+.checkbox{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    display: none;
+}
 
 .downPart li i{
     font-size: 1.5em;
@@ -317,4 +409,110 @@ li{
 
 .downPart li a{
     font-size: 1.3em;
+}
+
+@media (max-width: 600px) {
+
+    #dark{
+        display: block;
+        position: absolute;
+        right: 12.5em;
+    }
+
+    .mobileDark{
+        position: absolute;
+        right: 7.7em;
+
+    }
+
+    .lateralMenu{
+        width: 50%;
+        position: fixed;
+        white-space: nowrap;
+        z-index: 10;
+    }
+    
+    .navRight img{
+        position: absolute;
+        right: 4.5em;
+        top: 3px
+    }
+
+    .username, #logoName, #calendar{
+        display: none;
+    }
+
+    .makeHorizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainProfil{
+        margin: 15px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .profilePicture img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilePicture {
+        top: 15em;
+        left: 2.5em;
+    
+    }
+
+    .lateralMenu{
+        height: 100%;
+        transform: translateX(-200%);
+        transition: all 0.5s;
+    }
+    #feedback{
+        display: none;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .mainContainer .lateralMenu{
+        display: block;
+        width: 50%;
+        transform: translateX(0);
+        transition: all 0.5s;
+        
+    }
+    #toggle:checked ~ label{
+        color: var(--third-color);
+        transition: all 0.5s;
+    }
+
+    .checkbox{
+        display: block;
+    }
+
+    .studentContainer{
+        width: 500px;
+
+    }
+    .studentTotal, .womenCounter, .menCounter, .collaboratorCounter{
+        width: 60px;
+        height: 50px;
+        margin-inline: 0.5em;
+    }
+
+    .create{
+        position: absolute;
+        top: 2.9em;
+        right: -7em;
+    }
+
+    .info span {
+        font-size: 0.75em;
+    }
+
+    
 }

@@ -30,8 +30,67 @@ body {
     top: 0;
     padding-block: 3px;
     transition: all 0.5s;
+    z-index: 11;
     
 }
+
+/* Mode Sombre */
+
+#dark:checked, #dark:checked ~ .mobileDark .toggle {
+    transform: translateX(40px);
+    box-shadow: grey 0px 2px 3px;
+}
+
+#dark:checked ~ .mobileDark {
+    box-shadow: var(--primary-color) 0px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .topMenu .navRight li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+ #dark:checked ~ .topMenu, #dark:checked ~ .topMenu .navLeft, #dark:checked ~ .topMenu .navRight {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .lateralMenu ul li a{
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer{
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-color) 1px 2px 3px;
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .profileInfo{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+#dark:checked ~ .mainContainer .downProfil .onglets li a{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+/* Mode Sombre */
 
 .navLeft{
     display: flex;
@@ -70,6 +129,10 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.checkbox{
+    display: none;
 }
 
 .lateralMenu{
@@ -142,6 +205,7 @@ li{
     position: absolute;
     top: 7.5em;
     right: 4.2em;
+    
 
 }
 
@@ -152,6 +216,7 @@ li{
     width: 300px;
     height: 35px;
 }
+
 
 .filter{
     margin: 1.5em;
@@ -175,19 +240,26 @@ li{
     transition: all 0.5s;
 }
 
-.annoucementZone{
-    width: 1500px;
+
+
+.announcementZone{
+    width: 1200px;
+    height: auto;
     margin: 1em;
-    box-shadow: grey 0px 2px 3px;
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
 }
 
 .announceModel{
     background-color: rgb(236, 236, 236);
     width: 350px;
-    height: 200px;
+    height: 225px;
     box-shadow: grey 0px 2px 3px;
     border-radius: 15px;
     margin: 1.5em;
+    transition: all 0.5s;
+    flex: 1;
     
 }
 
@@ -201,13 +273,157 @@ li{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: none;
-    font-size: 1.2em;
-    width: 100px;
+    font-size: 1em;
+    width: 89px;
     height: 35px;
     cursor: pointer;
+
+}
+
+.announceModelFooter{
+    display: flex;
+    justify-content: end;
+}
+
+.announceModelFooter button:hover{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
 }
 
 .announceModel:hover{
     transform: scale(1.1);
     transition: all 0.5s;
+}
+
+.announceModelHeader, .announceModelBody, .announceModelFooter{
+    margin: 0.75em;
+}
+
+.pubDate{
+    color: grey;
+}
+
+.announcePdp{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.publicationInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .announceModel {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .topMenu{
+        background-color: var(--primary-color);
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 2.5px 3px grey;
+        position: sticky;
+        top: 0;
+        padding-block: 3px;
+        transition: all 0.5s;
+       
+
+        
+    }
+
+    #dark{
+        display: block;
+        position: absolute;
+        right: 12.5em;
+    }
+
+    .mobileDark{
+        position: absolute;
+        right: 7.7em;
+
+    }
+
+    .lateralMenu{
+        width: 50%;
+        position: fixed;
+        white-space: nowrap;
+        z-index: 10;
+    }
+    
+    .navRight img{
+        position: absolute;
+        right: 4.5em;
+        top: 3px
+    }
+
+    .username, #logoName, #calendar{
+        display: none;
+    }
+
+    .makeHorizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainProfil{
+        margin: 15px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .profilePicture img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilePicture {
+        top: 15em;
+        left: 2.5em;
+    
+    }
+
+    .lateralMenu{
+        height: 100%;
+        transform: translateX(-200%);
+        transition: all 0.5s;
+    }
+    #feedback{
+        display: none;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .mainContainer .lateralMenu{
+        display: block;
+        transform: translateX(0);
+        transition: all 0.5s;
+        
+    }
+    #toggle:checked ~ label{
+        color: var(--third-color);
+        transition: all 0.5s;
+    }
+
+    .checkbox{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    #toggle{
+        opacity: 0;
+    }
 }
