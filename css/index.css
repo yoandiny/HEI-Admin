@@ -438,6 +438,10 @@ label, #toggle
     display: none;
 }
 
+.mobileVerticalPart{
+    display: none;
+}
+
 @media (max-width: 600px){
 
     .topMenu{
@@ -492,6 +496,10 @@ label, #toggle
         flex-direction: column;
     }
 
+    .mobileVerticalPart{
+        display: block;
+    }
+
     .mainProfil{
         margin: 15px;
         width: 100%;
@@ -526,6 +534,9 @@ label, #toggle
         margin-left: 10em;
     }
 
+    input[type=checkbox]{
+        opacity: 0;
+    }
 
     .backPicture {
         overflow: hidden;
@@ -596,6 +607,17 @@ label, #toggle
 
 .verticalPart{
     display: none;
+  }
+
+  .firstLine, .secondLine, .coordonate, .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .infoBox{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 200px;
   }
 
 

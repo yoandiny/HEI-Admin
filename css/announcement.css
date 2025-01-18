@@ -33,6 +33,12 @@ body {
     z-index: 11;
     
 }
+
+.logo{
+    margin-left: 10em;
+}
+
+
 .mobileDark{
     position: absolute;
     z-index: 12;
@@ -53,6 +59,9 @@ body {
     opacity: 0;
 }
 
+    ::placeholder{
+        padding: 1em;
+    }
 .toggle{
     position: absolute;
     border-radius: 50%;
