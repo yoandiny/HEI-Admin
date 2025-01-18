@@ -221,6 +221,8 @@ li{
     list-style: none;
 }
 
+    
+
 .content{
     margin: 1em;
     border-radius: 15px;
@@ -362,7 +364,7 @@ li{
     .topMenu{
         background-color: var(--primary-color);
         margin: auto;
-        width: 100%;
+        width: 450px;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -453,13 +455,53 @@ li{
     }
 
     .checkbox{
+        z-index: 13;
         display: block;
         position: absolute;
         top: 0;
         left: 5px;
     }
+    
+    .searchBar{
+        position: absolute;
+        right:-2em;
+        top: 8.5em;
+    }
+
+    .loupe{
+        position: absolute;
+        font-size: 1.2em;
+        top: 0.7em;
+        right: 0.5em;
+    }
+
+    .bar{
+        width: 200px;
+        height: 45px;
+    }
 
     #toggle{
         opacity: 0;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .checkbox{
+        display: block;
+    }
+
+    .mainContainer{
+        width: 300px;
+    }
+
+    .announcementZone{
+        width: auto;
+        height: auto;
+        margin: 1em;
+        display: flex;
+        justify-content: row;
+        flex-wrap: wrap;
     }
 }

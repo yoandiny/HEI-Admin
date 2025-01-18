@@ -420,7 +420,7 @@ li{
     .topMenu{
         background-color: var(--primary-color);
         margin: auto;
-        width: 100%;
+        width: 450px;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -432,6 +432,9 @@ li{
        
 
         
+    }
+    input[type='checkbox']{
+        opacity: 0;
     }
 
     .logo{
@@ -490,6 +493,10 @@ li{
     
     }
 
+    .mainContainer{
+        width: 450px;
+    }
+
     .lateralMenu{
         height: 100%;
         transform: translateX(-200%);
@@ -520,8 +527,17 @@ li{
         display: block;
     }
 
+    .studentContainer .top h2 {
+        font-size: 1.2em;
+    }
+
+    .studentContainer .top button {
+        font-size: 1.2em;
+    }
+
     .studentContainer{
-        width: 500px;
+
+        width: 400px;
 
     }
     .studentTotal, .womenCounter, .menCounter, .collaboratorCounter{
@@ -529,15 +545,25 @@ li{
         height: 50px;
         margin-inline: 0.5em;
     }
+    .bar{
+        width: 150px;
+        height: 20px;
+    }
 
     .create{
+        width: 80px;
+        height: 40px;
         position: absolute;
-        top: 2.9em;
-        right: -7em;
+        top: 4.3em;
+        left: 16.5em;
     }
 
     .info span {
         font-size: 0.75em;
+    }
+
+    .searchPart{
+        white-space: nowrap;
     }
 
     
