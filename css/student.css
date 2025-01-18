@@ -420,7 +420,7 @@ li{
     .topMenu{
         background-color: var(--primary-color);
         margin: auto;
-        width: 450px;
+        width: 500px;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -433,9 +433,6 @@ li{
 
         
     }
-    input[type='checkbox']{
-        opacity: 0;
-    }
 
     .logo{
         margin-left: 10em;
@@ -445,12 +442,12 @@ li{
     #dark{
         display: block;
         position: absolute;
-        right: 12.5em;
+        right: 7.7em;
     }
 
     .mobileDark{
         position: absolute;
-        right: 7.7em;
+        right: 4em;
 
     }
 
@@ -493,10 +490,6 @@ li{
     
     }
 
-    .mainContainer{
-        width: 450px;
-    }
-
     .lateralMenu{
         height: 100%;
         transform: translateX(-200%);
@@ -527,17 +520,18 @@ li{
         display: block;
     }
 
-    .studentContainer .top h2 {
-        font-size: 1.2em;
+    .searchIcon {
+        position: absolute;
+        top: 18.6em;
+        right: -2.2em;
     }
-
-    .studentContainer .top button {
-        font-size: 1.2em;
+    
+    .searchBar{
+        width: 150px;
     }
 
     .studentContainer{
-
-        width: 400px;
+        width: 470px;
 
     }
     .studentTotal, .womenCounter, .menCounter, .collaboratorCounter{
@@ -545,25 +539,19 @@ li{
         height: 50px;
         margin-inline: 0.5em;
     }
-    .bar{
-        width: 150px;
-        height: 20px;
-    }
 
     .create{
-        width: 80px;
-        height: 40px;
         position: absolute;
-        top: 4.3em;
-        left: 16.5em;
+        top: 2.9em;
+        right: -3.5em;
     }
 
     .info span {
         font-size: 0.75em;
     }
 
-    .searchPart{
-        white-space: nowrap;
+    input[type='checkbox']{
+        opacity: 0;
     }
 
     
