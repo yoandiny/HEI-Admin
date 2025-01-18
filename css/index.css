@@ -465,7 +465,8 @@ label, #toggle
 
     .mobileDark{
         position: absolute;
-        right: 7.7em;
+        top: 1em;
+        right: 7.3em;
 
     }
 
@@ -570,12 +571,26 @@ label, #toggle
     .checkbox{   
         position: absolute;
         top: 0;
-        left: 5px;
+        left: 7px;
+        z-index: 12;
     }
 
 
     .onglets li a{
         font-size: 0.8rem;
+    }
+
+    #logout{
+        margin-inline: 0;
+    }
+
+    .topPdp a img{
+        position: absolute;
+        z-index: 12;
+        top: 0.7em;
+        right: 4em;
+        width: 35px;
+        height: 35px;
     }
 
 

@@ -33,6 +33,33 @@ body {
     z-index: 11;
     
 }
+.mobileDark{
+    position: absolute;
+    z-index: 12;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+    top: 1.2em;
+    right: 28em;
+}
+
+#dark{
+    position: absolute;
+    cursor: pointer;
+    z-index: 13;
+    top: 2em;
+    right: 37em;
+    opacity: 0;
+}
+
+.toggle{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: var(--secondary-color) 0px 2px 3px;
+    width: 23px;
+    height: 23px;
+}
 
 /* Mode Sombre */
 

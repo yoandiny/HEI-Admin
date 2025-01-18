@@ -63,6 +63,10 @@ body {
 
 /* Mode Sombre */
 
+#dark:checked ~ .body .mainContainer .studentList .list{
+    display: none;
+}
+
 #dark:checked, #dark:checked ~ .mobileDark .toggle {
     transform: translateX(40px);
     box-shadow: grey 0px 2px 3px;
